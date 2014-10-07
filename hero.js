@@ -80,6 +80,7 @@
 // };
 
 // // The "Safe Diamond Miner"
+/*
 var move = function(gameData, helpers) {
   var myHero = gameData.activeHero;
 
@@ -104,6 +105,7 @@ var move = function(gameData, helpers) {
     return helpers.findNearestNonTeamDiamondMine(gameData);
   }
 };
+*/
 
 // // The "Selfish Diamond Miner"
 // // This hero will attempt to capture diamond mines (even those owned by teammates).
@@ -132,11 +134,11 @@ var move = function(gameData, helpers) {
 //   }
 // };
 
-// // The "Coward"
-// // This hero will try really hard not to die.
-// var move = function(gameData, helpers) {
-//   return helpers.findNearestHealthWell(gameData);
-// }
+// The "Coward"
+// This hero will try really hard not to die.
+var move = function(gameData, helpers) {
+  return helpers.findNearestHealthWell(gameData);
+}
 
 
 // Export the move function here
